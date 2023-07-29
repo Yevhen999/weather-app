@@ -1,0 +1,15 @@
+.title {
+  color: #0a0a22;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 0.8;
+}
+
+.text {
+  color: #8b95a2;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.38;
+}
