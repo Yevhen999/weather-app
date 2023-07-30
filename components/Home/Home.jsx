@@ -4,7 +4,7 @@ import styles from "./Home.module.css";
 
 export const Home = () => {
   return (
-    <div>
+    <div className={styles.wrapper}>
       <Image src={homePhoto} alt="home-photo" />
       <h1 className={styles.title}>Weather</h1>
       <p className={styles.text}>Forecast</p>
