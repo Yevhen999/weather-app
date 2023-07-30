@@ -1,8 +1,8 @@
 import Image from "next/image";
 import homePhoto from "../../public/home.png";
-import styles from "./Home.module.css";
+import styles from "./Today.module.css";
 
-export const Home = () => {
+export const Today = () => {
   return (
     <div className={styles.wrapper}>
       <Image src={homePhoto} alt="home-photo" />

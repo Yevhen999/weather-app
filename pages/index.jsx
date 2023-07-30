@@ -1,13 +1,13 @@
 import Head from "next/head";
-import { Home } from "@/components/Home/Home";
+import { Today } from "@/components/Today/Today";
 
-export default function Index() {
+export default function Home() {
   return (
     <main>
       <Head>
         <title>Weather</title>
       </Head>
-      <Home />
+      <Today />
     </main>
   );
 }
