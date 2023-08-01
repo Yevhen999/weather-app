@@ -1,12 +1,14 @@
 export const AppBar = () => {
   return (
     <div>
-      <ul>
-        <li>Link</li>
-        <li>Link</li>
-        <li>Link</li>
-        <li>Link</li>
-      </ul>
+      <nav>
+        <ul>
+          <li>Today</li>
+          <li>Forecast</li>
+          <li>Precipitation</li>
+          <li>Raduis</li>
+        </ul>
+      </nav>
     </div>
   );
 };
