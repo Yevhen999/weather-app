@@ -1,6 +1,9 @@
+import { BiMenu } from "react-icons/bi";
+
 export const AppBar = () => {
   return (
     <div>
+      <BiMenu />
       <nav>
         <ul>
           <li>Today</li>
