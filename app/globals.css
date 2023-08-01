@@ -9,18 +9,14 @@ html {
 }
 
 body {
-  background: linear-gradient(226deg, #f2f4f7 0%, #bcc8d6 100%);
+  min-height: 100vh;
+  background: linear-gradient(180deg, #484b5b 0%, #2c2d35 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* .container {
   // max-width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-
-  @media screen and (min-width: 320px) {
-    width: 100%;
-  }
 
   @media screen and (min-width: 480px) {
     width: 480px;
