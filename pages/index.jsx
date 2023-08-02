@@ -1,4 +1,5 @@
-import { AppBar } from "@/components/AppBar/AppBar";
+import { Container } from "@/components/Container/Container";
+import { Header } from "@/components/Header/Header";
 import Head from "next/head";
 
 export default function Home() {
@@ -7,7 +8,9 @@ export default function Home() {
       <Head>
         <title>Weather</title>
       </Head>
-      <AppBar />
+      <Container>
+        <Header />
+      </Container>
     </main>
   );
 }
