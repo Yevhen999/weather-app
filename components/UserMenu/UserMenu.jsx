@@ -3,10 +3,10 @@ import styles from "./UserMenu.module.css";
 
 export const UserMenu = () => {
   return (
-    <div>
-      <BiMenu />
-      <h1>Toronto, Canada</h1>
-      <BiDotsVerticalRounded />
+    <div className={styles.wrapper}>
+      <BiMenu size={24} color="#fff" />
+      <h1 className={styles.title}>Toronto, Canada</h1>
+      <BiDotsVerticalRounded size={24} color="#fff" />
     </div>
   );
 };
