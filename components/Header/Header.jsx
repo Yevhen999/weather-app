@@ -1,11 +1,10 @@
 import { AppBar } from "../AppBar/AppBar";
 import { UserMenu } from "../UserMenu/UserMenu";
 
-export const Header = () => {
+export const Header = ({ weather }) => {
   return (
-    <header>
-      <UserMenu />
-      <AppBar />
-    </header>
+    <>
+      <UserMenu weather={weather} />
+    </>
   );
 };

@@ -1,6 +1,5 @@
+import { AppBar } from "@/components/AppBar/AppBar";
 import { Container } from "@/components/Container/Container";
-import { Header } from "@/components/Header/Header";
-import { Today } from "@/components/Today/Today";
 import Head from "next/head";
 
 export default function Home() {
@@ -10,8 +9,7 @@ export default function Home() {
         <title>Weather</title>
       </Head>
       <Container>
-        <Header />
-        <Today />
+        <AppBar />
       </Container>
     </main>
   );
