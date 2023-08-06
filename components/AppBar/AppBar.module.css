@@ -1,0 +1,37 @@
+.navList {
+  display: flex;
+
+  overflow: hidden;
+}
+
+.navItem {
+  list-style: none;
+
+  margin-right: 38px;
+}
+
+.navItem:last-child {
+  margin-right: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  white-space: nowrap;
+
+  color: #868794;
+
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.082px;
+}
+
+.activeNavLink {
+  text-decoration: none;
+  white-space: nowrap;
+
+  color: #fff;
+
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.082px;
+}
