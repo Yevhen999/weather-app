@@ -11,7 +11,7 @@ html {
 body {
   min-height: 100vh;
   background: linear-gradient(180deg, #484b5b 0%, #2c2d35 100%);
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
