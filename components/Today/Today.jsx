@@ -8,6 +8,7 @@ export const Today = () => {
       <Image src={homePhoto} alt="home-photo" />
       <h1 className={styles.title}>Weather</h1>
       <p className={styles.text}>Forecast</p>
+      <ul></ul>
     </div>
   );
 };
