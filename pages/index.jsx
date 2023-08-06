@@ -1,5 +1,6 @@
 import { Container } from "@/components/Container/Container";
 import { Header } from "@/components/Header/Header";
+import { Today } from "@/components/Today/Today";
 import Head from "next/head";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       </Head>
       <Container>
         <Header />
+        <Today />
       </Container>
     </main>
   );
