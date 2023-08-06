@@ -1,12 +1,11 @@
 import Link from "next/link";
-import { currentWeather } from "@/api/api";
 
 export const AppBar = () => {
   return (
     <div>
       <nav>
         <ul>
-          <li onClick={currentWeather}>
+          <li>
             <Link href="/">Today</Link>
           </li>
           <li>
