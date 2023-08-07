@@ -31,9 +31,9 @@ export const AppBar = () => {
   const { name, country } = weather;
 
   return (
-    <header>
+    <header className={styles.appHeader}>
       <Header weather={weather} />
-      <nav>
+      <nav className={styles.nav}>
         <ul className={styles.navList}>
           <li className={styles.navItem}>
             <Link
