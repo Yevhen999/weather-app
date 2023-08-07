@@ -1,9 +1,10 @@
-// import { AppBar } from "../AppBar/AppBar";
+import { WeatherDate } from "../WeatherDate/WeatherDate";
+import styles from "./Today.module.css";
 
-// export const Today = () => {
-//   return (
-//     <div>
-
-//     </div>
-//   );
-// };
+export const Today = () => {
+  return (
+    <section>
+      <WeatherDate />
+    </section>
+  );
+};
