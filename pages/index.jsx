@@ -3,7 +3,7 @@ import { AppBar } from "@/components/AppBar/AppBar";
 import { Container } from "@/components/Container/Container";
 import { Today } from "@/components/Today/Today";
 
-export default function Home() {
+export const Home = () => {
   return (
     <main>
       <Head>
@@ -15,4 +15,6 @@ export default function Home() {
       </Container>
     </main>
   );
-}
+};
+
+export default Home;
