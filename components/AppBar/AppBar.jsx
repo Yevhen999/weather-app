@@ -1,34 +1,13 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { usePathname } from "next/navigation";
+
 import { Header } from "../Header/Header";
 import styles from "./AppBar.module.css";
 
-export const AppBar = () => {
-  const [weather, setWeather] = useState({});
-
+export const AppBar = ({ weather }) => {
   const router = useRouter();
   const pathname = usePathname();
-
-  useEffect(() => {
-    const currentWeather = async () => {
-      try {
-        const response = await axios.get(
-          "https://api.weatherapi.com/v1/current.json?key=4a06b0437031495ca6b20810233107&q=chicago"
-        );
-        const data = await response.data;
-        setWeather(data.location);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    currentWeather();
-  }, []);
-  console.log(weather);
-
-  const { name, country } = weather;
 
   return (
     <header className={styles.appHeader}>

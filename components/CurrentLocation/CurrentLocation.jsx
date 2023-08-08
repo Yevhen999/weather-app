@@ -1,7 +1,8 @@
 import React from "react";
-import styles from "./Location.module.css";
+import styles from "./CurrentLocation.module.css";
 
-export const Location = ({ weather }) => {
+export const CurrentLocation = ({ weather }) => {
+  // console.log(weather.location.name);
   return (
     <div>
       <h1 className={styles.title}>
