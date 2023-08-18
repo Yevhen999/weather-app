@@ -18,7 +18,9 @@ export const BasicIndicators = ({ current }) => {
       <div className={styles.contentWrapper}>
         <span className={styles.bigSizeDegree}>{current.temp_c}&#176;</span>
         <p className={styles.rightText}>Partly cloudy</p>
-        <p>Wind {current.wind_kph} KM/H</p>
+        <p className={styles.secondRightText}>
+          Wind {current.wind_kph} KM/H WSW
+        </p>
       </div>
     </div>
   );

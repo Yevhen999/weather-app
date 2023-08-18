@@ -3,7 +3,8 @@
   justify-content: space-around;
 }
 
-.leftText {
+.leftText,
+.secondRightText {
   color: #9b9ead;
   font-size: 10px;
   letter-spacing: 0.058px;
