@@ -1,7 +1,7 @@
-/* .wrapper {
-  display: flex;
-  justify-content: space-around;
-} */
+.wrapper {
+  padding-bottom: 21px;
+  border-bottom: 1px dashed rgba(151, 151, 151, 0.17);
+}
 
 .contentWrapper {
   display: flex;

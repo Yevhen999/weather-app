@@ -4,7 +4,7 @@ import styles from "./Today.module.css";
 
 export const Today = ({ weather, current }) => {
   return (
-    <section className={styles.section}>
+    <section>
       <WeatherDate weather={weather} />
       <BasicIndicators current={current} />
     </section>
