@@ -7,19 +7,26 @@ export const BasicIndicators = ({ current }) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.contentWrapper}>
-        <Image src={sunny} alt="sunny" priority />
+        <div>
+          <Image src={sunny} alt="sunny" priority width={120} height={95} />
+        </div>
+
+        <div>
+          <p className={styles.bigSizeDegree}>{current.temp_c}&#176;</p>
+          <p className={styles.rightText}>Partly cloudy</p>
+        </div>
+      </div>
+      <div className={styles.contentWrapper}>
         <p className={styles.leftText}>
           {current.temp_c}&#176; | Feels like{" "}
           <span className={styles.leftTextSpan}>
             {current.feelslike_c}&#176;
           </span>
         </p>
-      </div>
-      <div className={styles.contentWrapper}>
-        <span className={styles.bigSizeDegree}>{current.temp_c}&#176;</span>
-        <p className={styles.rightText}>Partly cloudy</p>
+
         <p className={styles.secondRightText}>
-          Wind {current.wind_kph} KM/H WSW
+          Wind <span className={styles.rightTextSpan}>{current.wind_kph}</span>{" "}
+          KM/H WSW
         </p>
       </div>
     </div>
