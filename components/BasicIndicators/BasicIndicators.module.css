@@ -3,6 +3,8 @@
   border-bottom: 1px dashed rgba(151, 151, 151, 0.17);
 }
 
+/* main wrapper cm */
+
 .contentWrapper {
   display: flex;
   justify-content: space-around;
