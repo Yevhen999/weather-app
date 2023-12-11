@@ -1,3 +1,28 @@
 .section {
   padding-top: 22px;
 }
+
+.indicatorsList {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.indicatorsItem {
+  list-style: none;
+
+  color: #9b9ead;
+  font-size: 10px;
+  letter-spacing: 0.058px;
+  width: 117px;
+
+  margin-right: 80px;
+}
+
+.indicatorsItem:nth-child(2n) {
+  margin-right: 0;
+}
+
+.indicatorsIcon {
+  margin-right: 10px;
+}

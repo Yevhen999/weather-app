@@ -7,19 +7,24 @@ export const DetailedIndicators = () => {
   return (
     <section className={styles.section}>
       DetailedIndicators
-      <ul>
-        <li>
-          <IoPartlySunny color="#FFC100" /> Precipitation: <span>21%</span>
+      <ul className={styles.indicatorsList}>
+        <li className={styles.indicatorsItem}>
+          <IoPartlySunny color="#FFC100" className={styles.indicatorsIcon} />{" "}
+          Precipitation: <span>21%</span>
         </li>
-        <li>
-          <WiHumidity color="#FFC100" />
+        <li className={styles.indicatorsItem}>
+          <WiHumidity color="#FFC100" className={styles.indicatorsIcon} />
           Humidity: <span>59%</span>
         </li>
-        <li>
-          <WiNightCloudyWindy color="#FFC100" /> Wind: <span>10 km/h</span>
+        <li className={styles.indicatorsItem}>
+          <WiNightCloudyWindy
+            color="#FFC100"
+            className={styles.indicatorsIcon}
+          />{" "}
+          Wind: <span>10 km/h</span>
         </li>
-        <li>
-          <WiSunset color="#FFC100" />
+        <li className={styles.indicatorsItem}>
+          <WiSunset color="#FFC100" className={styles.indicatorsIcon} />
           Sunset: <span>29%</span>
         </li>
       </ul>
