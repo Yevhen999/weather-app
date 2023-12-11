@@ -14,7 +14,7 @@
   color: #9b9ead;
   font-size: 10px;
   letter-spacing: 0.058px;
-  width: 117px;
+  width: calc((100% - 130px) / 2);
 
   margin-right: 80px;
 }
