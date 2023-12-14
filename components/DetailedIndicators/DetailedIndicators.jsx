@@ -12,8 +12,10 @@ export const DetailedIndicators = () => {
             size={20}
             color="#FFC100"
             className={styles.indicatorsIcon}
-          />{" "}
-          Precipitation: <span>21%</span>
+          />
+          <p>
+            Precipitation: <span>21%</span>
+          </p>
         </li>
         <li className={styles.indicatorsItem}>
           <WiHumidity
@@ -21,7 +23,9 @@ export const DetailedIndicators = () => {
             color="#FFC100"
             className={styles.indicatorsIcon}
           />
-          Humidity: <span>59%</span>
+          <p>
+            Humidity: <span>59%</span>
+          </p>
         </li>
         <li className={styles.indicatorsItem}>
           <WiNightCloudyWindy
@@ -29,7 +33,9 @@ export const DetailedIndicators = () => {
             color="#FFC100"
             className={styles.indicatorsIcon}
           />{" "}
-          Wind: <span>10 km/h</span>
+          <p>
+            Wind: <span>10 km/h</span>
+          </p>
         </li>
         <li className={styles.indicatorsItem}>
           <WiSunset
@@ -37,7 +43,9 @@ export const DetailedIndicators = () => {
             color="#FFC100"
             className={styles.indicatorsIcon}
           />
-          Sunset: <span>29%</span>
+          <p>
+            Sunset: <span>29%</span>
+          </p>
         </li>
       </ul>
     </section>

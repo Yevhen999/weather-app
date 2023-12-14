@@ -4,17 +4,19 @@
 
 .indicatorsList {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   flex-wrap: wrap;
 }
 
 .indicatorsItem {
   list-style: none;
 
+  display: flex;
+  align-items: center;
   color: #9b9ead;
   font-size: 10px;
   letter-spacing: 0.058px;
-  width: calc((100% - 130px) / 2);
+  width: calc((100% - 80px) / 2);
 
   margin-right: 80px;
 }
