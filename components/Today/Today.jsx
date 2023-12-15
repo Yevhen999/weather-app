@@ -8,7 +8,7 @@ export const Today = ({ weather, current }) => {
     <section>
       <WeatherDate weather={weather} />
       <BasicIndicators current={current} />
-      <DetailedIndicators />
+      <DetailedIndicators current={current} />
     </section>
   );
 };

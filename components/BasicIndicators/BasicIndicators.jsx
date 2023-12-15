@@ -3,7 +3,7 @@ import sunny from "../../public/sunny.svg";
 import styles from "./BasicIndicators.module.css";
 
 export const BasicIndicators = ({ current }) => {
-  console.log(current);
+  // console.log(current);
   return (
     <div className={styles.wrapper}>
       <div className={styles.contentWrapper}>
