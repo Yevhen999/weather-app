@@ -6,15 +6,24 @@ import styles from "./DetailedIndicators.module.css";
 
 export const DetailedIndicators = ({ current }) => {
   console.log(current.text);
-  // console.log(current.condition);
-  // console.log(current.condition.icon);
   const icon = current.icon;
+  const imageLoader = ({ icon }) => {
+    return `https:${icon}`;
+  };
+
+  // const icon = current.icon;
   console.log(icon);
   return (
     <section className={styles.section}>
+      <Image
+        loader={imageLoader}
+        alt={icon}
+        src="https://cdn.weather.api"
+        width={75}
+        height={75}
+      />
       <ul className={styles.indicatorsList}>
         <li className={styles.indicatorsItem}>
-          {/* <Image src="icon" alt={current.text} width={64} height={64} /> */}
           <IoPartlySunny
             size={20}
             color="#FFC100"
