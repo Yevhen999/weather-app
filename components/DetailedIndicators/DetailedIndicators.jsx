@@ -1,6 +1,8 @@
 import { IoPartlySunny } from "react-icons/io5";
 import { WiHumidity, WiNightCloudyWindy, WiSunset } from "react-icons/wi";
-// import Image from "next/image";
+import Image from "next/image";
+
+import partlySunny from "../../public/parlty-sunny.svg";
 
 import styles from "./DetailedIndicators.module.css";
 
@@ -19,14 +21,20 @@ export const DetailedIndicators = ({ current, currentCondition }) => {
   console.log(icon);
   return (
     <section className={styles.section}>
-      {/* <Image /> */}
       <ul className={styles.indicatorsList}>
         <li className={styles.indicatorsItem}>
-          <IoPartlySunny
+          <Image
+            src={partlySunny}
+            alt="parlty-sunny"
+            width={20}
+            height={20}
+            className={styles.indicatorsIcon}
+          />
+          {/* <IoPartlySunny
             size={20}
             color="#FFC100"
             className={styles.indicatorsIcon}
-          />
+          /> */}
           <p>
             Precipitation: <span>{current.precip_mm} mm</span>
           </p>
@@ -52,11 +60,21 @@ export const DetailedIndicators = ({ current, currentCondition }) => {
           </p>
         </li>
         <li className={styles.indicatorsItem}>
-          <WiSunset
-            size={20}
-            color="#FFC100"
-            className={styles.indicatorsIcon}
-          />
+          {text === "Overcast" ? (
+            <Image
+              src={partlySunny}
+              alt="parlty-sunny"
+              width={20}
+              height={20}
+              className={styles.indicatorsIcon}
+            />
+          ) : (
+            <WiSunset
+              size={20}
+              color="#FFC100"
+              className={styles.indicatorsIcon}
+            />
+          )}
           <p>{text}</p>
         </li>
       </ul>
