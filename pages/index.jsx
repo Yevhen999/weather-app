@@ -9,6 +9,7 @@ import { Today } from "@/components/Today/Today";
 const Home = () => {
   const [weather, setWeather] = useState({});
   const [current, setCurrent] = useState({});
+  const [currentCondition, setCurrentCondition] = useState({});
 
   useEffect(() => {
     const currentWeather = async () => {
@@ -17,9 +18,10 @@ const Home = () => {
           "https://api.weatherapi.com/v1/current.json?key=4a06b0437031495ca6b20810233107&q=chicago"
         );
         const data = await response.data;
-        // console.log(data);
+        console.log(data);
         setWeather(data.location);
-        setCurrent(data.current.condition);
+        setCurrent(data.current);
+        setCurrentCondition(data.current.condition);
       } catch (error) {
         console.log(error);
       }
@@ -37,7 +39,11 @@ const Home = () => {
       </Head>
       <Container>
         <AppBar weather={weather} />
-        <Today weather={weather} current={current} />
+        <Today
+          weather={weather}
+          current={current}
+          currentCondition={currentCondition}
+        />
       </Container>
     </main>
   );

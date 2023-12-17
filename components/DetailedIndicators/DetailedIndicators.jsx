@@ -1,27 +1,25 @@
 import { IoPartlySunny } from "react-icons/io5";
 import { WiHumidity, WiNightCloudyWindy, WiSunset } from "react-icons/wi";
-import Image from "next/image";
+// import Image from "next/image";
 
 import styles from "./DetailedIndicators.module.css";
 
-export const DetailedIndicators = ({ current }) => {
-  console.log(current.text);
-  const icon = current.icon;
-  const imageLoader = ({ icon }) => {
-    return `https:${icon}`;
-  };
+export const DetailedIndicators = ({ current, currentCondition }) => {
+  const icon = currentCondition.icon;
+  7;
 
-  // const icon = current.icon;
+  const text = currentCondition.text;
+
+  console.log(currentCondition);
+
+  // const imageLoader = ({ icon }) => {
+  //   return `https:${icon}`;
+  // };
+
   console.log(icon);
   return (
     <section className={styles.section}>
-      <Image
-        loader={imageLoader}
-        alt={icon}
-        src="https://cdn.weather.api"
-        width={75}
-        height={75}
-      />
+      {/* <Image /> */}
       <ul className={styles.indicatorsList}>
         <li className={styles.indicatorsItem}>
           <IoPartlySunny
@@ -30,7 +28,7 @@ export const DetailedIndicators = ({ current }) => {
             className={styles.indicatorsIcon}
           />
           <p>
-            Precipitation: <span>21%</span>
+            Precipitation: <span>{current.precip_mm} mm</span>
           </p>
         </li>
         <li className={styles.indicatorsItem}>
@@ -40,7 +38,7 @@ export const DetailedIndicators = ({ current }) => {
             className={styles.indicatorsIcon}
           />
           <p>
-            Humidity: <span>59%</span>
+            Humidity: <span>{current.humidity}%</span>
           </p>
         </li>
         <li className={styles.indicatorsItem}>
@@ -50,7 +48,7 @@ export const DetailedIndicators = ({ current }) => {
             className={styles.indicatorsIcon}
           />{" "}
           <p>
-            Wind: <span>10 km/h</span>
+            Wind: <span>{current.wind_kph} km/h</span>
           </p>
         </li>
         <li className={styles.indicatorsItem}>
@@ -59,9 +57,7 @@ export const DetailedIndicators = ({ current }) => {
             color="#FFC100"
             className={styles.indicatorsIcon}
           />
-          <p>
-            Sunset: <span>29%</span>
-          </p>
+          <p>{text}</p>
         </li>
       </ul>
     </section>
