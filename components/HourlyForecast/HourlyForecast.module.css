@@ -1,0 +1,38 @@
+.hourlyForecast {
+  margin-top: 28px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.listItem {
+  margin-right: 14px;
+  padding: 16px 11px;
+
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+}
+
+.listItem:last-child {
+  margin-right: 0;
+}
+
+.listTime {
+  color: #fff;
+
+  /* font-family: Poppins; */
+  font-size: 8px;
+  /* font-style: normal; */
+  /* font-weight: 400; */
+  /* line-height: normal; */
+  letter-spacing: 0.047px;
+}
+
+.listImage {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}

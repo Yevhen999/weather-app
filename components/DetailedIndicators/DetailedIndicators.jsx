@@ -20,7 +20,7 @@ export const DetailedIndicators = ({ current, currentCondition }) => {
 
   console.log(icon);
   return (
-    <section className={styles.section}>
+    <div className={styles.detailedIndicators}>
       <ul className={styles.indicatorsList}>
         <li className={styles.indicatorsItem}>
           <Image
@@ -78,6 +78,6 @@ export const DetailedIndicators = ({ current, currentCondition }) => {
           <p>{text}</p>
         </li>
       </ul>
-    </section>
+    </div>
   );
 };
