@@ -82,30 +82,32 @@ export const DetailedIndicators = ({ current, currentCondition }) => {
           </p>
         </li>
         <li className={styles.indicatorsItem}>
-          {/* {conditionText} */}
-          {text === "Overcast" && (
-            <Image
-              src={partlySunny}
-              alt="parlty-sunny"
-              width={20}
-              height={20}
-              className={styles.indicatorsIcon}
-            />
-            /* <WiSunset
+          {text === "Partly cloudy" ||
+            ("Overcast" && (
+              <Image
+                src={partlySunny}
+                alt="parlty-sunny"
+                width={20}
+                height={20}
+                className={styles.indicatorsIcon}
+              />
+              /* <WiSunset
               size={20}
               color="#FFC100"
               className={styles.indicatorsIcon}
             /> */
-          )}
-          {text === "Mist" && (
-            <Image
-              src={partlyRainy}
-              alt="parlty-rainy"
-              width={20}
-              height={20}
-              className={styles.indicatorsIcon}
-            />
-          )}
+            ))}
+          {text === "Mist" ||
+            "Light rain" ||
+            ("Fog" && (
+              <Image
+                src={partlyRainy}
+                alt="parlty-rainy"
+                width={20}
+                height={20}
+                className={styles.indicatorsIcon}
+              />
+            ))}
           <p>{text}</p>
         </li>
       </ul>
