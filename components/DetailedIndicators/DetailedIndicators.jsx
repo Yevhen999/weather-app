@@ -4,23 +4,26 @@ import Image from "next/image";
 
 import partlySunny from "../../public/parlty-sunny.svg";
 import partlyRainy from "../../public/partly-rainy.svg";
+import nightly from "../../public/nightly.svg";
 
 import styles from "./DetailedIndicators.module.css";
 
 export const DetailedIndicators = ({ current, currentCondition }) => {
-  const icon = currentCondition.icon;
-  7;
+  let { text } = currentCondition;
 
-  const text = currentCondition.text;
   console.log(text);
 
-  // switch (text) {
-  //   case "Mist":
-  //     return <Mist />;
+  // next = condition;
 
-  //   default:
-  //     return console.log("first");
-  // }
+  // (
+  //   <Image
+  //     src={partlyRainy}
+  //     alt="parlty-rainy"
+  //     width={20}
+  //     height={20}
+  //     className={styles.indicatorsIcon}
+  //   />
+  // );
 
   // const USER_ROLE_ADMIN = "admin";
   // const USER_ROLE_USER = "user";
@@ -40,7 +43,6 @@ export const DetailedIndicators = ({ current, currentCondition }) => {
 
   console.log(currentCondition);
 
-  // console.log(icon);
   return (
     <div className={styles.detailedIndicators}>
       <ul className={styles.indicatorsList}>
@@ -82,32 +84,13 @@ export const DetailedIndicators = ({ current, currentCondition }) => {
           </p>
         </li>
         <li className={styles.indicatorsItem}>
-          {text === "Partly cloudy" ||
-            ("Overcast" && (
-              <Image
-                src={partlySunny}
-                alt="parlty-sunny"
-                width={20}
-                height={20}
-                className={styles.indicatorsIcon}
-              />
-              /* <WiSunset
-              size={20}
-              color="#FFC100"
-              className={styles.indicatorsIcon}
-            /> */
-            ))}
-          {text === "Mist" ||
-            "Light rain" ||
-            ("Fog" && (
-              <Image
-                src={partlyRainy}
-                alt="parlty-rainy"
-                width={20}
-                height={20}
-                className={styles.indicatorsIcon}
-              />
-            ))}
+          <Image
+            src={partlyRainy}
+            alt="parlty-rainy"
+            width={20}
+            height={20}
+            className={styles.indicatorsIcon}
+          />
           <p>{text}</p>
         </li>
       </ul>
