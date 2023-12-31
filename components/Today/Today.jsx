@@ -13,7 +13,11 @@ export const Today = ({ weather, current, currentCondition }) => {
         current={current}
         currentCondition={currentCondition}
       />
-      <HourlyForecast />
+      <HourlyForecast
+        weather={weather}
+        current={current}
+        currentCondition={currentCondition}
+      />
     </section>
   );
 };

@@ -11,19 +11,7 @@ import styles from "./DetailedIndicators.module.css";
 export const DetailedIndicators = ({ current, currentCondition }) => {
   let { text } = currentCondition;
 
-  console.log(text);
-
-  // next = condition;
-
-  // (
-  //   <Image
-  //     src={partlyRainy}
-  //     alt="parlty-rainy"
-  //     width={20}
-  //     height={20}
-  //     className={styles.indicatorsIcon}
-  //   />
-  // );
+  // console.log(text);
 
   // const USER_ROLE_ADMIN = "admin";
   // const USER_ROLE_USER = "user";
@@ -41,7 +29,7 @@ export const DetailedIndicators = ({ current, currentCondition }) => {
   //   }
   // }
 
-  console.log(currentCondition);
+  // console.log(currentCondition);
 
   return (
     <div className={styles.detailedIndicators}>
