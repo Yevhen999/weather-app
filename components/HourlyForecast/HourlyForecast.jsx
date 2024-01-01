@@ -5,12 +5,9 @@ import sunny from "../../public/sunny.svg";
 import partlyRainy from "../../public/partly-rainy.svg";
 
 export const HourlyForecast = ({ weather, current, currentCondition }) => {
-  console.log("weather", weather);
   const { localtime_epoch, localtime } = weather;
 
-  const currentHour = new Date(localtime_epoch).getHours(localtime_epoch);
-
-  console.log("currentHour", currentHour);
+  const currentHour = new Date().getHours(localtime_epoch);
 
   return (
     <div className={styles.hourlyForecast}>

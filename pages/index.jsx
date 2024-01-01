@@ -18,7 +18,7 @@ const Home = () => {
           "https://api.weatherapi.com/v1/current.json?key=4a06b0437031495ca6b20810233107&q=chicago"
         );
         const data = await response.data;
-        console.log(data);
+
         setWeather(data.location);
         setCurrent(data.current);
         setCurrentCondition(data.current.condition);
@@ -28,9 +28,6 @@ const Home = () => {
     };
     currentWeather();
   }, []);
-  // console.log(weather);
-  // console.log(weather.location);
-  // console.log(current.text);
 
   return (
     <main>
