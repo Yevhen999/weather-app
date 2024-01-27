@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import axios from "axios";
 import Head from "next/head";
 
@@ -30,28 +29,6 @@ export const getStaticProps = async () => {
 };
 
 const Home = ({ weather, current, currentCondition }) => {
-  // const [weather, setWeather] = useState({});
-  // const [current, setCurrent] = useState({});
-  // const [currentCondition, setCurrentCondition] = useState({});
-
-  // useEffect(() => {
-  //   const currentWeather = async () => {
-  //     try {
-  //       const response = await axios.get(
-  //         "https://api.weatherapi.com/v1/current.json?key=4a06b0437031495ca6b20810233107&q=chicago"
-  //       );
-  //       const data = await response.data;
-
-  //       setWeather(data.location);
-  //       setCurrent(data.current);
-  //       setCurrentCondition(data.current.condition);
-  //     } catch (error) {
-  //       console.log(error);
-  //     }
-  //   };
-  //   currentWeather();
-  // }, []);
-
   return (
     <main>
       <Head>
