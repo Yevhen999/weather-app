@@ -5,10 +5,12 @@ import { AppBar } from "@/components/AppBar/AppBar";
 import { Container } from "@/components/Container/Container";
 import { Today } from "@/components/Today/Today";
 
+
 export const getStaticProps = async () => {
   const response = await axios.get(
-    "https://api.weatherapi.com/v1/current.json?key=4a06b0437031495ca6b20810233107&q=chicago"
+    `https://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_API_KEY}&q=chicago`
   );
+
   const data = await response.data;
 
   if (!data) {

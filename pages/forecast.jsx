@@ -14,7 +14,7 @@ const Forecast = () => {
     const currentWeather = async () => {
       try {
         const response = await axios.get(
-          "https://api.weatherapi.com/v1/current.json?key=4a06b0437031495ca6b20810233107&q=chicago"
+          `https://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_API_KEY}&q=chicago`
         );
         const data = await response.data;
         // console.log(data);
